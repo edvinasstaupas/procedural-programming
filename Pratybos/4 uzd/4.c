@@ -62,4 +62,3 @@ void printList(struct el *elem) {
 		printf("%d ", elem->duom);
 	}
 }
-//the end
