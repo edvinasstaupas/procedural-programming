@@ -10,7 +10,7 @@ int main() {
 	struct el *start = NULL, *elem;
 	int upper = 6, lower = 4,
 	n = 10,
-	value;
+	value, found, c;
     srand(time(0));
 	for (int i = 0; i < n; ++i) {
 		value = findValue(upper, lower);
@@ -18,8 +18,13 @@ int main() {
 	}
 	printList(start);
 	printf("\n");
-	value = 4;
-	deletElem(&start, value);
+	value = 5;
+	found = 0;
+	c = 0;
+	deletElem(&start, start, value, &found, &start);
+	printf("bbb");
+	if (found == 0)
+        printf("There is no element with value %d in this linked list.", value);
 	printf("\n");
 	printList(start);
 	return 0;
