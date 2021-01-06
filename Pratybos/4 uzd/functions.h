@@ -8,6 +8,6 @@ struct el {
 
 void addElem(struct el **start, int value);
 void deletElem(struct el **start, int value);
-void printList(struct el *elem);
+void printList(struct el **start, int value);
 
 #endif
