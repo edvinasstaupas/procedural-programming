@@ -17,9 +17,9 @@ int main() {
 		value = i;
 		addElem(&start, value);
 	}
-	printList(&start, 4);
+	printList(&start, 5);
 	printf("\n");
-	value = 1;
+	value = 4;
 	deletElem(&start, value);
 	printf("\n");
 	printList(&start, n+2);

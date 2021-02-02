@@ -46,7 +46,7 @@ void printList(struct el **start, int value) {
     struct el *elem = (*start);
     while (elem->kitas != NULL) {
         printf("%d ", elem->duom);
-        if(i == value){
+        if(i+2 == value){
             struct el *tempElem = (struct el *) malloc(sizeof(struct el));
             tempElem->kitas = elem->kitas;
             tempElem->duom = -1;
